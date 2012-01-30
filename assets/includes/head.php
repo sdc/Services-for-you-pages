@@ -5,13 +5,13 @@
 <head>
 <title><?php echo $result['page_title']; ?></title>
 <meta name="description" content="<?php echo $result['meta_description']; ?>" />
-<link rel="icon" type="image/png" href="http://static.southdevon.ac.uk/s4u/assets/images/favicon.ico" />
+<link rel="icon" type="image/png" href="../assets/images/favicon.ico" />
 <link rel="stylesheet" href="http://blank-css-template.googlecode.com/svn-history/r1/files/template/css/reset.css" type="text/css" />
-<link rel="stylesheet" href="http://static.southdevon.ac.uk/s4u/assets/css/layout.css" type="text/css" />
+<link rel="stylesheet" href="../assets/css/layout.css" type="text/css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <link href="http://fonts.googleapis.com/css?family=<?php echo $result['google_font_url']; ?>" rel="stylesheet" type="text/css"> 
 <link href="http://fonts.googleapis.com/css?family=<?php echo $result['email_google_font']; ?>" rel="stylesheet" type="text/css"> 
-<script src="http://static.southdevon.ac.uk/s4u/assets/js/slideshow.js" type="text/javascript"></script>
+<script src="../assets/js/slideshow.js" type="text/javascript"></script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
