@@ -5,6 +5,8 @@ default_run_options[:pty] = true
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+set :user, "webteam"
+set :scm_passphrase, "OMG!itwtp455"
 
 role :web, "172.20.1.50"                 
 role :app, "172.20.1.50"                  
