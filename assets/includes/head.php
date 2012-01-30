@@ -2,7 +2,7 @@
 <?php require_once("../assets/includes/functions.php"); ?>
 <?php 
   $ip=$_SERVER['REMOTE_ADDR'];
-  if ($ip == '172.21.3.17' || 'localhost') {
+  if ($ip == '127.0.0.1') {
     $file_link = "../assets";
   } else {
     $file_link = "http://static.southdevon.ac.uk/s4u/current/assets";

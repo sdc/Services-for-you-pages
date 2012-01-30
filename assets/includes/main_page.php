@@ -5,7 +5,6 @@
     echo '<body style="background-image: url(\'images/' . $result['body_background_image'] .'\'); background-repeat: repeat-x;">';
   }
 ?>
-  
 <div id="wrapper">
   <div id="header">
       <div id="logo" style="height:<?php echo $result['logo_div_height']; ?>; margin:<?php echo $result['logo_margin']; ?>; float:<?php echo $result['logo_float']; ?>;">
