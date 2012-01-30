@@ -19,6 +19,6 @@ namespace :deploy do
     run "#{try_sudo} touch restart.txt"
   end
   task :after_deploy do
-    run "ln -s #{shared_path}/constants.php #{current_path}/assets/constants.php"
+    run "ln -s #{shared_path}/constants.php #{current_path}/assets/includes/constants.php"
   end
 end
