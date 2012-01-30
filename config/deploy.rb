@@ -1,0 +1,22 @@
+set :application, "s4u-pages"
+set :repository,  "git@github.com:sdc/Services-for-you-pages.git"
+set :deploy_to, "/srv/s4u/#{application}"
+default_run_options[:pty] = true
+
+set :scm, :git
+# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+
+role :web, "172.20.1.50"                 
+role :app, "172.20.1.50"                  
+role :db,  "172.20.1.50", :primary => true 
+
+namespace :deploy do
+  task :start do ; end
+  task :stop do ; end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "#{try_sudo} touch restart.txt"
+  end
+  task :after_deploy do
+    run "ln -s #{shared_path}/constants.php #{current_path}/assets/constants.php"
+  end
+end
