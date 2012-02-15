@@ -18,7 +18,6 @@
 <link rel="stylesheet" href="<?php echo $file_link; ?>/css/layout.css" type="text/css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <link href="http://fonts.googleapis.com/css?family=<?php echo $result['google_font_url']; ?>" rel="stylesheet" type="text/css"> 
-<link href="http://fonts.googleapis.com/css?family=<?php echo $result['email_google_font']; ?>" rel="stylesheet" type="text/css"> 
 <script src="<?php echo $file_link; ?>/js/slideshow.js" type="text/javascript"></script>
 <script type="text/javascript">
 
