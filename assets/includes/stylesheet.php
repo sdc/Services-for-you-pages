@@ -48,6 +48,7 @@ ul {
 #main_content h1 {
   font-family: <?php echo $result['main_header_font']; ?>;
   margin: <?php echo $result['content_header_margin']; ?>;
+  font-weight: <?php echo $result['main_header_font_weight']; ?>;
 }
 
 #footer {
