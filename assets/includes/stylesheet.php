@@ -10,8 +10,7 @@ p {
   font-size: <?php echo $result['paragraph_font_size']; ?>em;  
 }
 a {
-  color: #<?php echo $result['link_font_color']; ?>;
-  font-size: <?php echo $result['paragraph_font_size']; ?>em;    
+  color: #<?php echo $result['link_font_color']; ?>; 
  }
 a:hover {
     color: #<?php echo $result['link_hover_font_color'] ?>;
@@ -25,8 +24,11 @@ ul {
 
 #email {
   font-family: <?php echo $result['email_font']; ?>;
-  font-size: <?php echo $result['email_font_size']; ?>em;
   margin: <?php echo $result['email_margin']; ?>;
+}
+
+#email a {
+  font-size: <?php echo $result['email_font_size']; ?>em;
 }
 
 #nav {

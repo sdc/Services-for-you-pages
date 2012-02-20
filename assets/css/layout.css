@@ -54,10 +54,6 @@ img {
     float: right;
 }
 
-#email a {
-  font-size: 1em;
-}
-
 #email a:hover {
   text-decoration: none;
 }
@@ -153,3 +149,39 @@ img {
   margin: 25px 11px;
   font-size: 0.9em;
 }
+
+
+/* ---------------- Ofline ---------------- */
+#offline {
+  width: 600px;
+  height: 200px;
+  background-color: #f6f6f6;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;  
+}
+
+#offile-title {
+  float: left;
+  display: inline;
+  width: 240px;
+  clear: right;
+  padding-top: 12px;
+}
+
+#offile-title h1 {
+
+}
+
+#offile-content {
+  float: left;
+  display: inline;
+  width: 580px;
+  clear: left;
+  padding-top:15px;
+  font-size: 1.3em;
+  text-align: left;
+}
+
