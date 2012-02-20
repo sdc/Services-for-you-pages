@@ -160,7 +160,8 @@ img {
   margin: 0 auto;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  border-radius: 8px;  
+  border-radius: 8px;
+  color: #4C4C4C;
 }
 
 #offile-title {
