@@ -9,12 +9,12 @@
         </a>
       </div>
       <div id="offile-title">
-        <h1><?php echo $result['service_name']; ?></h1>
+        <h1>Welcome to <?php echo $result['service_name']; ?></h1>
       </div>  
       <div id="offile-content">      
-        <p>Welcome to <?php echo $result['service_name']; ?> website. The site is currently offline, please check back again soon.</p>
+        <p>This site is currently offline, please check back again soon.</p>
       </div>  
-      
+      <a class="link" href="http://southdevon.ac.uk/">www.southdevon.ac.uk/</a>
     </div>    
   </div>
   
