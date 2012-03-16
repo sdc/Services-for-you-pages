@@ -8,7 +8,7 @@
     $file_link = "http://static.southdevon.ac.uk/s4u/current/assets";
   }  
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 <title><?php echo $result['page_title']; ?></title>
@@ -34,5 +34,8 @@
 </script>
 
 <?php require_once("stylesheet.php"); ?>  
+
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+
 
 </head>
