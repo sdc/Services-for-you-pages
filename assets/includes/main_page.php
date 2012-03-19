@@ -41,7 +41,7 @@
       <?php
         $slide = $result['slide_number'];
         for ($s=1; $s <= $slide; $s++) {
-          echo '<img src="images/slideshow/' . $s . '.jpg" "alt="slide' . $s .'" />';
+          echo '<img src="images/slideshow/' . $s . '.jpg" alt="slide' . $s .'" />';
          }
         ?>
     </div>
@@ -56,8 +56,8 @@
     <div class="right">
       <h1 style="font-family:<?php echo $result['google_font']; ?>; color:#<?php echo $result['h1_color']; ?>;font-size:<?php echo $result['h1_font_size']; ?>em; text-shadow:<?php echo $result['main_h1_drop_shadow']; ?>; margin: <?php echo $result['content_header_margin']; ?>;"><?php echo $result['latest_news_header']; ?></h1>
       <div style="">
-        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-          <script>
+        <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+          <script type="text/javascript">
             new TWTR.Widget({
               version: 2,
               type: 'profile',
