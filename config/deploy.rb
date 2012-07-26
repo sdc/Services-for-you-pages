@@ -18,7 +18,12 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch restart.txt"
   end
-  task :after_deploy do
+end
+
+namespace :db do
+  task :db_config, :except => { :no_release => true }, :role => :app do
     run "ln -s #{shared_path}/constants.php #{current_path}/assets/includes/constants.php"
   end
 end
+
+after "deploy:finalize_update", "db:db_config"

@@ -6,3 +6,4 @@
     require_once("../assets/includes/main_page.php");
   }
 ?>
+ 
