@@ -140,7 +140,7 @@
       </div>
     </div>
   </div>
-  <?php if ($result['footer_required'] == 1) { ?>
+  <?php if ($result['footer_required'] == 'true') { ?>
     <div id="footer">
       <div id="footer_content">
         <?php echo $result['footer_image']; ?>
