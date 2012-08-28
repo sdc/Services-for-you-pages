@@ -20,10 +20,10 @@ namespace :deploy do
   end
 end
 
-namespace :db do
-  task :db_config, :except => { :no_release => true }, :role => :app do
-    run "ln -s #{shared_path}/constants.php #{current_path}/assets/includes/constants.php"
+after "deploy:create_symlink" do
+  run "ln -s #{shared_path}/constants.php #{current_path}/assets/includes/constants.php"
   end
+  run "chmod a+rw -R #{current_path}"
 end
 
 after "deploy:finalize_update", "db:db_config"
