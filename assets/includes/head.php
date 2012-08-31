@@ -22,7 +22,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=<?php echo $result['google_font']; ?>" /> 
 <script src="<?php echo $file_link; ?>/js/slideshow.js" type="text/javascript"></script>
-<meta name="google-site-verification" content="<?php echo $webmaster_verification; ?>" />
+<meta name="google-site-verification" content="<?php echo $result['webmaster_verification']; ?>" />
 
 <!-- CSS values set from Admin system -->
 <?php require_once("stylesheet.php"); ?>  
