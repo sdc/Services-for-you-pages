@@ -5,8 +5,6 @@ default_run_options[:pty] = true
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-set :user, "briancrocker"
-set :scm_passphrase, "Plymouth_1"
 
 role :web, "172.21.1.53"                 
 role :app, "172.21.1.53"                  

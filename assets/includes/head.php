@@ -9,7 +9,7 @@
   if ($ip == '127.0.0.1') {
     $file_link = "../assets";
   } else {
-    $file_link = "http://static.southdevon.ac.uk/s4u/current/assets";
+    $file_link = "http://sdc-servicesforyou/s4u-pages/current/assets";
   }  
 ?>
 
