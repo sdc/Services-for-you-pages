@@ -20,5 +20,6 @@ end
 
 after "deploy:create_symlink" do
   run "ln -s #{shared_path}/constants.php #{current_path}/assets/includes/constants.php"
+  run "ln -s assets #{current_path}/assets"
   run "chmod a+rw -R #{current_path}"
 end
