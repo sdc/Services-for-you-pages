@@ -5,12 +5,12 @@ default_run_options[:pty] = true
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-set :user, "webteam"
-set :scm_passphrase, "OMG!itwtp455"
+set :user, "briancrocker"
+set :scm_passphrase, "Plymouth_1"
 
-role :web, "172.20.1.50"                 
-role :app, "172.20.1.50"                  
-role :db,  "172.20.1.50", :primary => true 
+role :web, "172.21.1.53"                 
+role :app, "172.21.1.53"                  
+role :db,  "172.21.1.53", :primary => true 
 
 namespace :deploy do
   task :start do ; end
