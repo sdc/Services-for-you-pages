@@ -20,6 +20,11 @@ end
 
 after "deploy:create_symlink" do
   run "ln -s #{shared_path}/constants.php #{current_path}/assets/includes/constants.php"
-  run "ln -s assets #{current_path}/rec1.co.uk/assets"
+  run "ln -sf #{current_path}/assets #{current_path}/devonstudioschool.co.uk/assets"
+  run "ln -sf #{current_path}/assets #{current_path}/horizonsrestaurant.info/assets"
+  run "ln -sf #{current_path}/assets #{current_path}/paigntonvenuehire.co.uk/assets"
+  run "ln -sf #{current_path}/assets #{current_path}/rec1.co.uk/assets"
+  run "ln -sf #{current_path}/assets #{current_path}/sdcfriends.co.uk/assets"
+  run "ln -sf #{current_path}/assets #{current_path}/theenergycentre.net/assets"
   run "chmod a+rw -R #{current_path}"
 end
