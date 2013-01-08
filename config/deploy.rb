@@ -1,4 +1,4 @@
-set :application, "s4u"
+set :application, "s4u-pages"
 set :repository,  "git@github.com:sdc/Services-for-you-pages.git"
 set :deploy_to, "/srv/#{application}"
 default_run_options[:pty] = true
