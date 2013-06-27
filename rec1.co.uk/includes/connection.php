@@ -17,4 +17,6 @@ if (!$db_select) {
 $res = mysql_query("SELECT * FROM `services` WHERE `id` = 2");
 
 $result = mysql_fetch_assoc($res);
+
+$twitter_widget_id = "350194721353781248";
 ?>

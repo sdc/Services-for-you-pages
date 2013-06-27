@@ -56,37 +56,11 @@
     <div class="right">
       <h1 style="font-family:<?php echo $result['google_font']; ?>; color:#<?php echo $result['h1_color']; ?>;font-size:<?php echo $result['h1_font_size']; ?>em; text-shadow:<?php echo $result['main_h1_drop_shadow']; ?>; margin: <?php echo $result['content_header_margin']; ?>;"><?php echo $result['latest_news_header']; ?></h1>
       <div id="twitter-widget">
-        <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
-        <script type="text/javascript">
-          new TWTR.Widget({
-            version: 2,
-            type: 'profile',
-            rpp: 4,
-            interval: 6000,
-            width: 250,
-            height: 180,
-            theme: {
-              shell: {
-                background: '#<?php echo $result['theme_background_color']; ?>',
-                color: '#<?php echo $result['theme_font_color']; ?>'
-              },
-              tweets: {
-                background: '#<?php echo $result['tweet_background_color']; ?>',
-                color: '#<?php echo $result['tweet_font_color']; ?>',
-                links: '#<?php echo $result['twiter_link_color']; ?>'
-              }
-            },
-            features: {
-              scrollbar: true,
-              loop: false,
-              live: false,
-              hashtags: true,
-              timestamp: true,
-              avatars: false,
-              behavior: 'list'
-            }
-          }).render().setUser('<?php echo $result['twitter_user']; ?>').start();
-        </script>
+        <a class="twitter-timeline" width="250" height="280" href="https://twitter.com/<?php echo $result['twitter_user']; ?>" data-widget-id="<?php echo $twitter_widget_id; ?>" data-chrome="" data-theme="dark">Tweets by @<?php echo $result['twitter_user']; ?></a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        
+        
+
       </div>
       <div id="social_media_buttons">
           <?php 
@@ -142,11 +116,13 @@
   </div>
   <?php if ($result['footer_required'] == 'true') { ?>
     <div id="footer">
+      <!--
       <div id="footer_content">
-        <?php echo $result['footer_image']; ?>
-        <?php echo $result['footer_text']; ?>
+        <#?php echo $result['footer_image']; ?>
+        <#?php echo $result['footer_text']; ?>
       </div>
-    </div>      
+    </div>
+    -->      
   <?php } else { ?>
     <style type="text/css">
     <!-- 
